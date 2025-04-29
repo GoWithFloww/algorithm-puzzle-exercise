@@ -42,7 +42,7 @@ function findAllPairSum(
         } else if (currentSum < target) {
             start += 1
         } else {
-            end -=1
+            end -= 1
         }
     }
 

@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest run && go test ./src/...",
+    "test-ts": "vitest run",
+    "test-go": "go test ./src/...",
+    "prettier": "prettier --write \"src/**/*.ts\" && go fmt \"./src/...\""
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",

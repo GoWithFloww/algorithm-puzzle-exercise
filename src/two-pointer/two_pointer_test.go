@@ -85,14 +85,14 @@ func TestTripletSum(t *testing.T) {
 		expected [][]int
 	}{
 		{
-			name: "should find unique triplets that sum to zero",
-			nums: []int{-1, 0, 1, 2, -1, -4},
+			name:     "should find unique triplets that sum to zero",
+			nums:     []int{-1, 0, 1, 2, -1, -4},
 			expected: [][]int{{-1, -1, 2}, {-1, 0, 1}},
 		},
 		{
-			name: "should handle duplicates correctly",
-			nums: []int{-2, 0, 1, 1, 2},
-			expected: [][]int{{-2, 1, 1}, {-2, 0, 2}}, 
+			name:     "should handle duplicates correctly",
+			nums:     []int{-2, 0, 1, 1, 2},
+			expected: [][]int{{-2, 1, 1}, {-2, 0, 2}},
 		},
 		{
 			name:     "should handle array with all zeros",

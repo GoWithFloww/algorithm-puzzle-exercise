@@ -1,4 +1,5 @@
-// O(n)
+// Time complexity: O(n)
+// Space complexity: O(1)
 export function pairSum(nums: number[], target: number): number[] {
     let start = 0,
         end = nums.length - 1
