@@ -34,7 +34,7 @@
     "<THIRD_PARTY_MODULES>",
     "^@/assets/(.*)",
     "^@/api/(.*)$",
-    "^@/stores/(.*)$",
+    "^@/stores/(.*)$", 
     "^@/lib/(.*)$",
     "^@/utils/(.*)$",
     "^@/constants/(.*)$",

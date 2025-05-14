@@ -41,3 +41,19 @@ func ListToSlice[T any](head *ListNode[T]) []T {
 	}
 	return arr
 }
+
+// DListNode represents a node in a doubly linked list.
+type DListNode[T any] struct {
+	Value T
+	Prev  *DListNode[T]
+	Next  *DListNode[T]
+}
+
+// CreateDNode creates a new doubly linked list node with the given value.
+func CreateDNode[T any](value T) *DListNode[T] {
+	return &DListNode[T]{
+		Value: value,
+		Prev:  nil,
+		Next:  nil,
+	}
+}
