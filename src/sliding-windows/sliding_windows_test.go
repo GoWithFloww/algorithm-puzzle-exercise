@@ -26,3 +26,21 @@ func TestFindAnagrams(t *testing.T) {
 		}
 	}
 }
+
+func TestLongestSubstringWithUniqueChar(t *testing.T) {
+	cases := []struct {
+		s    string
+		want int
+	}{
+		{"", 0},
+		{"abcabcbb", 3},
+		{"bbbbb", 1},
+		{"pwwkew", 3},
+		{"au", 2},
+	}
+	for _, c := range cases {
+		if got := slidingwindows.LongestSubstringWithUniqueChar(c.s); got != c.want {
+			t.Errorf("got %d for %q, want %d", got, c.s, c.want)
+		}
+	}
+}

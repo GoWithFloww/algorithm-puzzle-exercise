@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { longestSubstringWithUniqueChar } from './longest-substring-with-unique-char'
 import { findAnagrams } from './substring-anagram'
 
 describe('findAnagrams', () => {
@@ -20,5 +21,20 @@ describe('findAnagrams', () => {
 
     it('should handle strings with all same characters', () => {
         expect(findAnagrams('aaaaa', 'aa')).toEqual([0, 1, 2, 3])
+    })
+})
+
+describe('longestSubstringWithUniqueChar', () => {
+    const cases: [string, number][] = [
+        ['', 0],
+        ['abcabcbb', 3],
+        ['bbbbb', 1],
+        ['pwwkew', 3],
+        ['au', 2],
+    ]
+    cases.forEach(([s, want]) => {
+        it(`${s}->${want}`, () => {
+            expect(longestSubstringWithUniqueChar(s)).toBe(want)
+        })
     })
 })
